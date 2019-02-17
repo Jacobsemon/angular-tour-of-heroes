@@ -2,19 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TopHeroesComponent } from './top-heroes/top-heroes.component';
-import { MyheroesComponent } from './myheroes/myheroes.component';
-import { EditheroesComponent } from './editheroes/editheroes.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
+import { HeroItemComponent } from './hero-item/hero-item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopHeroesComponent,
-    MyheroesComponent,
-    EditheroesComponent
+    HeroesComponent,
+    HeroFormComponent,
+    HeroItemComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
