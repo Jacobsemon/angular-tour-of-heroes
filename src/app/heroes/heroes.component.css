@@ -10,8 +10,8 @@
   cursor: pointer;
   background-color: #EEE;
   margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
+  padding: 0;
+  height: 30px;
   border-radius: 4px;
 }
 
@@ -21,7 +21,7 @@
   left: .1em;
 }
 
-.heroes a {
+.heroes>div {
   color: #888;
   text-decoration: none;
   position: relative;
@@ -65,9 +65,10 @@ button:hover {
 }
 
 button.delete {
-  position: relative;
+  position: absolute;
   left: 194px;
-  top: -32px;
+  height: 30px;
+  top: 0;
   background-color: gray !important;
   color: white;
 }
